@@ -13,7 +13,7 @@ public class SpeedBoost : MonoBehaviour
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D collision)
     {
-        GetComponent<Player>().speed *= 2;
+        GetComponent<Player>().speed *= 2.0f;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -24,6 +24,6 @@ public class SpeedBoost : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        GetComponent<Player>().speed /= 2;
+        GetComponent<Player>().speed /= 2.0f;
     }
 }
