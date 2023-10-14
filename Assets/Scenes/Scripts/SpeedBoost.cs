@@ -14,7 +14,10 @@ public class SpeedBoost : MonoBehaviour
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        player.speed = 12.6f;
+        if (collision.gameObject.name == "WetFloor")
+        {
+            player.speed = 12.6f;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
