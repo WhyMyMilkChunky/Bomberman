@@ -23,15 +23,15 @@ public class Player : MonoBehaviour
         {
             yDir = 1.0f;
         }
-        else if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             yDir = -1.0f;
         }
-        else if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             xDir = -1.0f;
         }
-        else if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D))
         {
             xDir = 1.0f;
         }
