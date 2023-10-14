@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Varlife : MonoBehaviour
 {
@@ -19,5 +20,9 @@ public class Varlife : MonoBehaviour
     {
 
         lifeText.SetText("Lives: " + lives);
+        if (lives <= 0)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }
