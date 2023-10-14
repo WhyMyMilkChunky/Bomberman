@@ -12,7 +12,7 @@ public class SpeedBoost : MonoBehaviour
     }
 
     // Update is called once per frame
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         player.speed = 12.6f;
     }
