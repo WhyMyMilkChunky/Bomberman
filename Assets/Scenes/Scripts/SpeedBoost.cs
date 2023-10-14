@@ -18,6 +18,12 @@ public class SpeedBoost : MonoBehaviour
         {
             player.speed = 12.6f;
         }
+        if (collision.gameObject.name == "Burgur")
+        {
+            GetComponent<Var>().score += 1;
+
+            Object.Destroy(collision.gameObject);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
