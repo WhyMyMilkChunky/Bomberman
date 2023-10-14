@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 432992803}
   - component: {fileID: 432992802}
   - component: {fileID: 432992805}
+  - component: {fileID: 432992806}
   m_Layer: 0
   m_Name: me
   m_TagString: Untagged
@@ -151,11 +152,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 432992801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3eeec3215c25d049af8890dae9bc86b, type: 3}
+  m_Script: {fileID: 11500000, guid: 6813a42f63b428d49b423552ac04689d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  rb: {fileID: 0}
+  speed: 10
 --- !u!212 &432992803
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -217,8 +217,8 @@ Transform:
   m_GameObject: {fileID: 432992801}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9394, y: 2.6733, z: 0}
-  m_LocalScale: {x: 0.441, y: 0.441, z: 0.441}
+  m_LocalPosition: {x: -6.0293, y: 4.1576, z: 0}
+  m_LocalScale: {x: 0.4253825, y: 0.4253825, z: 0.4253825}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -250,6 +250,41 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &432992806
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 432992801}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.46000007, y: -0.28}
+  serializedVersion: 2
+  m_Radius: 2.69
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +346,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.6963367
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
