@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class SpeedBoost : MonoBehaviour
 {
-    public GameObject Player;
+    public Player player;
     // Start is called before the first frame update
     void Start()
     {
-        
+        player = GetComponent<Player>();
     }
 
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D collision)
     {
-        GetComponent<Player>().speed *= 2.0f;
+        player.speed = 12.6f;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -25,6 +25,6 @@ public class SpeedBoost : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
 
-        GetComponent<Player>().speed /= 2.0f;
+        player.speed = 6.6f;
     }
 }
