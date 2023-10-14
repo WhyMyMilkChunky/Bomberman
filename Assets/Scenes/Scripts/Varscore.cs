@@ -5,7 +5,7 @@ using TMPro;
 
 public class Varscore : MonoBehaviour
 {
-    public int score = 0;
+    public float score = 0.0f;
 
     public TMP_Text scoreText;
 
