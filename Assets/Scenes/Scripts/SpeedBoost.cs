@@ -20,9 +20,9 @@ public class SpeedBoost : MonoBehaviour
         }
         if (collision.gameObject.name == "Burgur")
         {
-            GetComponent<Varscore>().score += 1;
-
             Object.Destroy(collision.gameObject);
+
+            
         }
     }
 
@@ -36,4 +36,4 @@ public class SpeedBoost : MonoBehaviour
 
         player.speed = 6.6f;
     }
-}
+}   
