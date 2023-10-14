@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float speed = 0.0f;
-    public float rotationSpeed = 30.0f; 
     Rigidbody2D rb;
 
     // Start is called before the first frame update
@@ -15,7 +14,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float xDir = 0.0f;
         float yDir = 0.0f;
@@ -37,19 +36,8 @@ public class Player : MonoBehaviour
             xDir = 1.0f;
         }
 
-        rb.velocity = new Vector2(xDir, yDir) * speed;
-
+        Vector2 direction = new Vector2(xDir, yDir).normalized;  
         
-        if (Input.GetKey(KeyCode.E))
-        {
-            
-            transform.Rotate(Vector3.forward * -rotationSpeed * Time.deltaTime);
-        }
-        
-        else if (Input.GetKey(KeyCode.Q))
-        {
-            
-            transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
-        }
+        rb.velocity = direction * speed;
     }
 }
