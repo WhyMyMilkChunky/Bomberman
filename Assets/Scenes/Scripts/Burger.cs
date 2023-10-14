@@ -5,11 +5,11 @@ using UnityEngine;
 public class Burger : MonoBehaviour
 {
     public Player player;
-    Var playerScore;
+    Varscore playerScore;
     // Start is called before the first frame update
     private void Start()
     {
-        Var playerScore = GetComponent<Var>();
+        Varscore playerScore = GetComponent<Varscore>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
