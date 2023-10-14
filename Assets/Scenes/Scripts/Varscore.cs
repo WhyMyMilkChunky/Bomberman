@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Var : MonoBehaviour
+public class Varscore : MonoBehaviour
 {
     public int score = 0;
 
