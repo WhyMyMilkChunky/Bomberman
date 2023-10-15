@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
+using TMPro;
 
 public class SpeedBoost : MonoBehaviour
 {
+    public TMP_Text scoreText;
     public Player player;
     public int playerScore = 0;
     public int lives = 3;
@@ -43,5 +45,8 @@ public class SpeedBoost : MonoBehaviour
 
         player.speed = 6.6f;
     }
-
+    void Update()
+    {
+        scoreText.SetText("Score: " + GetComponent<SpeedBoost>().playerScore);
+    }
 }   
