@@ -548,8 +548,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -328, y: 165.75}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -740.9126, y: 367.85583}
+  m_SizeDelta: {x: 442.1748, y: 112.0961}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &136775781
 MonoBehaviour:
@@ -598,8 +598,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -940,6 +940,7 @@ MonoBehaviour:
   lives: 3
   source: {fileID: 0}
   clip: {fileID: 0}
+  clip2: {fileID: 0}
 --- !u!1 &234625296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1024,7 @@ MonoBehaviour:
   lives: 3
   source: {fileID: 0}
   clip: {fileID: 0}
+  clip2: {fileID: 0}
 --- !u!212 &234625299
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1831,6 +1833,7 @@ MonoBehaviour:
   lives: 3
   source: {fileID: 432992808}
   clip: {fileID: 8300000, guid: 9e62f8e28b19120408b0039912a42618, type: 3}
+  clip2: {fileID: 8300000, guid: c955e4f628f54364195958a3f97cf63d, type: 3}
 --- !u!82 &432992808
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2115,6 +2118,7 @@ MonoBehaviour:
   lives: 3
   source: {fileID: 0}
   clip: {fileID: 0}
+  clip2: {fileID: 0}
 --- !u!212 &523777588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2410,6 +2414,7 @@ MonoBehaviour:
   lives: 3
   source: {fileID: 0}
   clip: {fileID: 0}
+  clip2: {fileID: 0}
 --- !u!212 &628877069
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3227,6 +3232,7 @@ MonoBehaviour:
   lives: 3
   source: {fileID: 0}
   clip: {fileID: 0}
+  clip2: {fileID: 0}
 --- !u!212 &944699553
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3931,6 +3937,7 @@ MonoBehaviour:
   lives: 3
   source: {fileID: 0}
   clip: {fileID: 0}
+  clip2: {fileID: 0}
 --- !u!212 &1277620497
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4183,8 +4190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -328, y: 215.75}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -740.9126, y: 479.95197}
+  m_SizeDelta: {x: 442.1748, y: 112.0961}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1392197417
 MonoBehaviour:
@@ -4233,8 +4240,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -28697,6 +28704,7 @@ MonoBehaviour:
   lives: 3
   source: {fileID: 0}
   clip: {fileID: 0}
+  clip2: {fileID: 0}
 --- !u!1 &1938410363
 GameObject:
   m_ObjectHideFlags: 0
