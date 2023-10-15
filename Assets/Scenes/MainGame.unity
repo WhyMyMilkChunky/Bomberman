@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 136775781}
   - component: {fileID: 136775783}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: TEXT TMP LIFE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -545,8 +545,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8467b442b01604db320ccb26605879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  lifeText: {fileID: 0}
   player: {fileID: 432992802}
-  playerScore: {fileID: 0}
+  playerScore: 0
+  lives: 3
 --- !u!1 &234625296
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,8 +626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8467b442b01604db320ccb26605879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  lifeText: {fileID: 0}
   player: {fileID: 432992802}
-  playerScore: {fileID: 0}
+  playerScore: 0
+  lives: 3
 --- !u!212 &234625299
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -998,8 +1004,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8467b442b01604db320ccb26605879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 1392197417}
+  lifeText: {fileID: 136775781}
   player: {fileID: 432992802}
-  playerScore: {fileID: 1392197419}
+  playerScore: 0
+  lives: 3
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,8 +1190,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8467b442b01604db320ccb26605879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  lifeText: {fileID: 0}
   player: {fileID: 432992802}
-  playerScore: {fileID: 0}
+  playerScore: 0
+  lives: 3
 --- !u!212 &523777588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1539,8 +1551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2968e4066b0cb7644aa163c531089467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
-  scoreText: {fileID: 0}
+  scoreText: {fileID: 1392197417}
 --- !u!4 &761682071
 Transform:
   m_ObjectHideFlags: 0
@@ -2062,7 +2073,7 @@ GameObject:
   - component: {fileID: 1392197417}
   - component: {fileID: 1392197419}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TMP TEXT SCORE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2196,7 +2207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2968e4066b0cb7644aa163c531089467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 0
   scoreText: {fileID: 1392197417}
 --- !u!1 &1472493385
 GameObject:
@@ -26461,8 +26471,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a8467b442b01604db320ccb26605879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  lifeText: {fileID: 0}
   player: {fileID: 432992802}
-  playerScore: {fileID: 0}
+  playerScore: 0
+  lives: 3
 --- !u!1 &1938410363
 GameObject:
   m_ObjectHideFlags: 0

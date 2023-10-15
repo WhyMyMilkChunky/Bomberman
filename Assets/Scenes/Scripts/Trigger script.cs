@@ -4,10 +4,12 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class SpeedBoost : MonoBehaviour
 {
     public TMP_Text scoreText;
+    public TMP_Text lifeText;
     public Player player;
     public int playerScore = 0;
     public int lives = 3;
@@ -48,5 +50,11 @@ public class SpeedBoost : MonoBehaviour
     void Update()
     {
         scoreText.SetText("Score: " + GetComponent<SpeedBoost>().playerScore);
+        lifeText.SetText("Score: " + GetComponent<SpeedBoost>().lives);
+        lifeText.SetText("Lives: " + lives);
+        if (lives <= 0)
+        {
+            SceneManager.LoadScene(2);
+        }
     }
 }   
