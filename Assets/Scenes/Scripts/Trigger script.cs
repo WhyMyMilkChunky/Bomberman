@@ -15,6 +15,7 @@ public class SpeedBoost : MonoBehaviour
     public int lives = 3;
     public AudioSource source;
     public AudioClip clip;
+    public AudioClip clip2;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,7 @@ public class SpeedBoost : MonoBehaviour
         {
             playerScore += 1;
             Debug.Log("Score:"+ playerScore);
+            source.PlayOneShot(clip2);
             Object.Destroy(collision.gameObject);
          
         }
