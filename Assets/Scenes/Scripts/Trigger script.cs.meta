@@ -3,7 +3,14 @@ guid: 1a8467b442b01604db320ccb26605879
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - scoreText: {instanceID: 0}
+  - lifeText: {instanceID: 0}
+  - player: {instanceID: 0}
+  - source: {instanceID: 0}
+  - clip: {instanceID: 0}
+  - clip2: {instanceID: 0}
+  - clip3: {fileID: 8300000, guid: bed093bcb9569e441879d77fe7e0f7b4, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

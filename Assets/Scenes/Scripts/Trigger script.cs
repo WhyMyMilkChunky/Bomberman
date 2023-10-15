@@ -16,6 +16,7 @@ public class SpeedBoost : MonoBehaviour
     public AudioSource source;
     public AudioClip clip;
     public AudioClip clip2;
+    public AudioClip clip3;
     // Start is called before the first frame update
     void Start()
     {
@@ -65,6 +66,7 @@ public class SpeedBoost : MonoBehaviour
         lifeText.SetText("Lives: " + lives);
         if (lives <= 0)
         {
+            source.PlayOneShot(clip3);
             SceneManager.LoadScene(2);
         }
     }
