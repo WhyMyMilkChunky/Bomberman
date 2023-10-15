@@ -36,7 +36,10 @@ public class SpeedBoost : MonoBehaviour
          
         }
         if (collision.gameObject.name == "SALAD")
-        {  lives -= 1;}
+        {  lives -= 1;
+            Debug.Log("Lives:" + lives);
+            Object.Destroy(collision.gameObject);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
