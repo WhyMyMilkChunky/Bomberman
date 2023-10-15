@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class SpeedBoost : MonoBehaviour
 {
     public Player player;
-    public Varscore playerScore;
-    public Varlife lives;
+    public int playerScore = 0;
+    public int lives = 3;
     // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<Player>();
-        playerScore = GetComponent<Varscore>();
-        lives = GetComponent<Varlife>();
+        
+      
     }
 
     // Update is called once per frame
@@ -25,8 +26,10 @@ public class SpeedBoost : MonoBehaviour
         }
         if (collision.gameObject.name == "Burgur")
         {
-
+            playerScore += 1;
+            Debug.Log("Score:"+ playerScore);
             Object.Destroy(collision.gameObject);
+            
         }
     }
 
