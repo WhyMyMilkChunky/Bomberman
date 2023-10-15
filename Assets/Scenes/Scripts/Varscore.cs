@@ -5,20 +5,20 @@ using TMPro;
 
 public class Varscore : MonoBehaviour
 {
-    public float score = 0.0f;
+    SpeedBoost triggerscript;
 
     public TMP_Text scoreText;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        triggerscript = GetComponent<SpeedBoost>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.SetText("Score: " + score);
+        scoreText.SetText("Score: " + triggerscript.playerScore);
 
     }
 }

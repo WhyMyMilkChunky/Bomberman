@@ -25,6 +25,7 @@ public class SpeedBoost : MonoBehaviour
         }
         if (collision.gameObject.name == "Burgur")
         {
+
             Object.Destroy(collision.gameObject);
         }
     }
