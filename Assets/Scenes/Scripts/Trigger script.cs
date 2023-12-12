@@ -5,13 +5,20 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEditor.XR;
+using UnityEngine.PlayerLoop;
 
 public class SpeedBoost : MonoBehaviour
 {
     public TMP_Text scoreText;
+    static public TMP_Text timeText;
+    static public float timelimit;
     public TMP_Text lifeText;
     public Player player;
+    static public bool win = false;
     public int playerScore = 0;
+    public int totscore = 0;
+    static public int savscore = 0;
     public int lives = 3;
     public AudioSource source;
     public AudioClip clip;
@@ -20,19 +27,20 @@ public class SpeedBoost : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        timelimit = 300;
         player = GetComponent<Player>();
-        
+        //playerScore = savscore;
       
     }
 
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "WetFloor")
+        if (collision.gameObject.tag == "WetFloor")
         {
             player.speed = 12.6f;
         }
-        if (collision.gameObject.name == "Burgur")
+        if (collision.gameObject.tag == "Burgur")
         {
             playerScore += 1;
             Debug.Log("Score:"+ playerScore);
@@ -60,7 +68,7 @@ public class SpeedBoost : MonoBehaviour
         player.speed = 6.6f;
     }
     void Update()
-    {
+    {   savscore = playerScore;
         scoreText.SetText("Score: " + GetComponent<SpeedBoost>().playerScore);
         lifeText.SetText("Score: " + GetComponent<SpeedBoost>().lives);
         lifeText.SetText("Lives: " + lives);
@@ -69,5 +77,7 @@ public class SpeedBoost : MonoBehaviour
             source.PlayOneShot(clip3);
             SceneManager.LoadScene(2);
         }
+        timelimit = timelimit - 1 * Time.deltaTime;
+        timeText.SetText("Time: " + SpeedBoost.timelimit);
     }
 }   
