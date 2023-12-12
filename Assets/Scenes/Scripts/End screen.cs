@@ -22,7 +22,7 @@ public class Endscreen : MonoBehaviour
 
         //scoreText.SetText("Score: " + SpeedBoost.savscore + "/" + GetComponent<SpeedBoost>().totscore);
         scoreText.SetText("Score: " + SpeedBoost.savscore + " out of " + SpeedBoost.totscore);
-        timeText.SetText("time left: " + SpeedBoost.timelimit);
+        timeText.SetText("time left: " + Mathf.Round(SpeedBoost.timelimit));
         if (SpeedBoost.win = true)
         {
             WinText.SetText("Cangrats You Win!");

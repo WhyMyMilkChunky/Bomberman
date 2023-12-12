@@ -18,7 +18,7 @@ public class SpeedBoost : MonoBehaviour
     static public bool win = false;
     public int playerScore = 0;
     static public int totscore;
-    static public int savscore = 0;
+    static public int savscore;
     public int lives = 3;
     public AudioSource source;
     public AudioClip clip;
@@ -68,16 +68,17 @@ public class SpeedBoost : MonoBehaviour
         player.speed = 6.6f;
     }
     void Update()
-    {   savscore = playerScore;
+    {   
         scoreText.SetText("Score: " + GetComponent<SpeedBoost>().playerScore);
         lifeText.SetText("Score: " + GetComponent<SpeedBoost>().lives);
         lifeText.SetText("Lives: " + lives);
         if (lives <= 0)
-        {
+        {   savscore = playerScore;
             source.PlayOneShot(clip3);
             SceneManager.LoadScene(2);
+            
         }
-        timelimit = timelimit - 1 * Time.deltaTime;
-        timeText.SetText("Time: " + SpeedBoost.timelimit);
+        timelimit -= Time.deltaTime;
+        timeText.SetText("Time: " + Mathf.Round(SpeedBoost.timelimit));
     }
 }   
