@@ -48,7 +48,7 @@ public class SpeedBoost : MonoBehaviour
             Object.Destroy(collision.gameObject);
          
         }
-        if (collision.gameObject.name == "SALAD")
+        if (collision.gameObject.tag == "SALAD")
         {  lives -= 1;
             Debug.Log("Lives:" + lives);
             source.PlayOneShot(clip);
