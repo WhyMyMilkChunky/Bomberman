@@ -26,7 +26,7 @@ public class SpeedBoost : MonoBehaviour
     public AudioClip clip3;
     // Start is called before the first frame update
     void Start()
-    {
+    {   savscore = 0;
         timelimit = 300;
         player = GetComponent<Player>();
         //playerScore = savscore;
