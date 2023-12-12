@@ -55,6 +55,14 @@ public class SpeedBoost : MonoBehaviour
             Object.Destroy(collision.gameObject);
             
         }
+        if (collision.gameObject.tag == "finish")
+        {
+            win = true;
+            savscore = playerScore;
+            source.PlayOneShot(clip3);
+            SceneManager.LoadScene(2);
+
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
