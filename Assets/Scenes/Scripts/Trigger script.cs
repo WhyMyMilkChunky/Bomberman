@@ -11,13 +11,13 @@ using UnityEngine.PlayerLoop;
 public class SpeedBoost : MonoBehaviour
 {
     public TMP_Text scoreText;
-    static public TMP_Text timeText;
+    public TMP_Text timeText;
     static public float timelimit;
     public TMP_Text lifeText;
     public Player player;
     static public bool win = false;
     public int playerScore = 0;
-    public int totscore = 0;
+    static public int totscore;
     static public int savscore = 0;
     public int lives = 3;
     public AudioSource source;
