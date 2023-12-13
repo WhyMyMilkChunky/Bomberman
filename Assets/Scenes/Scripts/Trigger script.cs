@@ -33,7 +33,7 @@ public class SpeedBoost : MonoBehaviour
         timelimit = 300;
         player = GetComponent<Player>();
         //playerScore = savscore;
-      //Burgs = GetComponent<GameObject[]>();
+      
     }
 
     // Update is called once per frame
