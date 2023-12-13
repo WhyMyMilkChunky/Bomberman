@@ -15,7 +15,8 @@ public class SpeedBoost : MonoBehaviour
 
     public TMP_Text scoreText;
     public TMP_Text timeText;
-    static public float timelimit;
+    public static float timelimit;
+    public float setTimeLimit;
     public TMP_Text lifeText;
     public Player player;
     static public bool win = false;
@@ -30,7 +31,7 @@ public class SpeedBoost : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {   savscore = 0;
-        timelimit = 300;
+        timelimit = setTimeLimit;
         player = GetComponent<Player>();
         //playerScore = savscore;
       
