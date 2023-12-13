@@ -10,6 +10,9 @@ using UnityEngine.PlayerLoop;
 
 public class SpeedBoost : MonoBehaviour
 {
+  // public static int[] automaticArray = { 1, 2, 3, 4 };
+  // public GameObject[] Burgs = new GameObject[automaticArray.Length];
+
     public TMP_Text scoreText;
     public TMP_Text timeText;
     static public float timelimit;
@@ -30,7 +33,7 @@ public class SpeedBoost : MonoBehaviour
         timelimit = 300;
         player = GetComponent<Player>();
         //playerScore = savscore;
-      
+      //Burgs = GetComponent<GameObject[]>();
     }
 
     // Update is called once per frame
@@ -88,5 +91,7 @@ public class SpeedBoost : MonoBehaviour
         }
         timelimit -= Time.deltaTime;
         timeText.SetText("Time: " + Mathf.Round(SpeedBoost.timelimit));
+
+
     }
 }   
