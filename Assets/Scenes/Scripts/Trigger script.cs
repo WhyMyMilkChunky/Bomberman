@@ -21,7 +21,7 @@ public class SpeedBoost : MonoBehaviour
     public Player player;
     static public bool win = false;
     public int playerScore = 0;
-    static public int totscore;
+    static public int totscore = 37;
     static public int savscore;
     public int lives = 3;
     public AudioSource source;
