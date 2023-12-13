@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 using TMPro;
 using UnityEngine.SceneManagement;
-using UnityEditor.XR;
+
 using UnityEngine.PlayerLoop;
 
 public class SpeedBoost : MonoBehaviour
