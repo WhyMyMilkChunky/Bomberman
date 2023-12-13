@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8549384668824768702}
   - component: {fileID: 5272072007229582292}
-  - component: {fileID: 1111342929124578482}
   - component: {fileID: 1937386931805691429}
   m_Layer: 0
   m_Name: WetFloor
@@ -86,27 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1111342929124578482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 901153672823969377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a8467b442b01604db320ccb26605879, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  lifeText: {fileID: 0}
-  player: {fileID: 0}
-  playerScore: 0
-  lives: 3
-  source: {fileID: 0}
-  clip: {fileID: 0}
-  clip2: {fileID: 0}
-  clip3: {fileID: 0}
 --- !u!61 &1937386931805691429
 BoxCollider2D:
   m_ObjectHideFlags: 0
